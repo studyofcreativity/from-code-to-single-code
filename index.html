@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>From Code To Single Code</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>From Code To Single Code</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>From Code To Single Code</h1>
 
     <div class="controls">
-      <label for="language">Lenguaje:</label>
+      <label for="language">Selecciona lenguaje:</label>
       <select id="language">
         <option value="python">Python</option>
         <option value="javascript">JavaScript</option>
@@ -20,16 +20,17 @@
       </select>
     </div>
 
-    <textarea id="inputCode" placeholder="Escribe tu código aquí..."></textarea>
+    <textarea id="inputCode" placeholder="Escribe o pega tu código aquí..."></textarea>
 
     <div class="buttons">
       <button id="encodeButton">Codificar</button>
       <button id="decodeButton">Descodificar</button>
     </div>
 
-    <textarea id="outputCode" placeholder="Código traducido..." readonly></textarea>
+    <textarea id="outputCode" placeholder="Aquí aparecerá el código traducido..." readonly></textarea>
   </div>
 
+  <script src="dictionaries.js"></script>
   <script src="encoder.js"></script>
   <script src="decoder.js"></script>
   <script src="main.js"></script>
