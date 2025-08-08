@@ -1,12 +1,10 @@
-const reverseMap = Object.fromEntries(
-  Object.entries(specialMap).map(([k, v]) => [v, k])
-);
-
-function decodeToNormal(specialCode) {
-  let decoded = specialCode;
-  for (const symbol in reverseMap) {
-    const regex = new RegExp(symbol, 'g');
-    decoded = decoded.replace(regex, reverseMap[symbol]);
+function decodeCode(code) {
+  for (const dict of Object.values(dictionaries)) {
+    for (const [word, symbol] of Object.entries(dict)) {
+      const regex = new RegExp(symbol.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+      code = code.replace(regex, word);
+    }
   }
-  return decoded;
+
+  return code;
 }
