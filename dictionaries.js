@@ -60,7 +60,7 @@ const dictionaries = {
     "index": "🔍",
     "count": "🔢",
     "sort": "↕️",
-    "reverse": "🔄",
+    "reverse": "🔄"
   },
   javascript: {
     "break": "⏹",
@@ -114,7 +114,7 @@ const dictionaries = {
     "Number": "🔢",
     "Boolean": "⚖️",
     "Date": "📅",
-    "Math": "➗",
+    "Math": "➗"
   },
   java: {
     "abstract": "🅰️",
@@ -167,7 +167,7 @@ const dictionaries = {
     "try": "⚖",
     "void": "🕳",
     "volatile": "🌬",
-    "while": "🔁",
+    "while": "🔁"
   },
   csharp: {
     "abstract": "🅰️",
