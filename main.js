@@ -1,11 +1,12 @@
-function encodeCode() {
-  const input = document.getElementById("inputCode").value;
-  const output = document.getElementById("outputCode");
-  output.value = encodeToSpecial(input);
-}
+document.getElementById("encodeButton").addEventListener("click", () => {
+  const code = document.getElementById("inputCode").value;
+  const language = document.getElementById("language").value;
+  const encoded = encodeCode(code, language);
+  document.getElementById("outputCode").value = encoded;
+});
 
-function decodeCode() {
-  const input = document.getElementById("inputCode").value;
-  const output = document.getElementById("outputCode");
-  output.value = decodeToNormal(input);
-}
+document.getElementById("decodeButton").addEventListener("click", () => {
+  const code = document.getElementById("inputCode").value;
+  const decoded = decodeCode(code);
+  document.getElementById("outputCode").value = decoded;
+});
