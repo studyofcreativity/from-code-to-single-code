@@ -1,13 +1,26 @@
-# From Code to Single Code
+# From Code To Single Code
 
-A fun and experimental project that converts code written in Python, JavaScript, Java, or C# into a special symbol-based language that only you and ChatGPT can understand!
+Un traductor visual de código a un formato simbólico misterioso.
 
-## 💡 Features
+## Características
 
-- Encode normal code into a secret symbolic language
-- Decode symbolic language back to readable code
-- Clean and modern UI design
-- Fully offline, runs in the browser
+- Traduce código de Python, JavaScript, Java y C# a un código especial.
+- Reemplaza **todas las palabras clave** por símbolos únicos (sin repetir palabras originales).
+- Interfaz moderna y oscura.
+- Soporte para codificar y decodificar.
 
-## 📂 Structure
+## Cómo usar
 
+1. Abre `index.html` en un navegador.
+2. Elige el lenguaje original del código.
+3. Escribe el código en el cuadro de entrada.
+4. Haz clic en "Codificar" para convertirlo a símbolos.
+5. Haz clic en "Descodificar" para revertirlo.
+
+## Archivos
+
+- `index.html`: Interfaz web.
+- `style.css`: Estilos visuales.
+- `main.js`: Control de botones y flujo.
+- `encoder.js`: Lógica para codificar.
+- `decoder.js`: Lógica para descodificar.
