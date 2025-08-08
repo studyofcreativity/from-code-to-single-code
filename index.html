@@ -3,21 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>From Code to Single Code</title>
+  <title>From Code To Single Code</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🔄 Code ↔ Single Code Translator</h1>
-    <textarea id="inputCode" placeholder="Enter your code here..."></textarea>
+    <h1>From Code To Single Code</h1>
 
-    <div class="buttons">
-      <button onclick="encodeCode()">🔐 Encode</button>
-      <button onclick="decodeCode()">🔓 Decode</button>
+    <div class="controls">
+      <label for="language">Lenguaje:</label>
+      <select id="language">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="csharp">C#</option>
+      </select>
     </div>
 
-    <textarea id="outputCode" placeholder="Result..." readonly></textarea>
+    <textarea id="inputCode" placeholder="Escribe tu código aquí..."></textarea>
+
+    <div class="buttons">
+      <button id="encodeButton">Codificar</button>
+      <button id="decodeButton">Descodificar</button>
+    </div>
+
+    <textarea id="outputCode" placeholder="Código traducido..." readonly></textarea>
   </div>
+
   <script src="encoder.js"></script>
   <script src="decoder.js"></script>
   <script src="main.js"></script>
