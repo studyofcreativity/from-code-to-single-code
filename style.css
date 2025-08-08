@@ -1,58 +1,77 @@
 body {
-  background: #1a1a2e;
-  color: #eaeaea;
+  background: #1e1e2f;
+  color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 800px;
-  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #2a2a3c;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000000aa;
 }
 
 h1 {
+  text-align: center;
   margin-bottom: 20px;
-  color: #00adb5;
 }
 
 textarea {
   width: 100%;
-  height: 150px;
-  margin: 10px 0;
-  background: #222831;
-  color: #eeeeee;
-  border: none;
-  padding: 12px;
-  font-size: 16px;
-  resize: vertical;
+  height: 200px;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  border: 1px solid #555;
   border-radius: 8px;
-  outline: none;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+.controls {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .buttons {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 button {
-  flex: 1;
-  padding: 12px;
-  background-color: #00adb5;
+  background-color: #4c4cff;
   color: white;
   border: none;
-  font-weight: bold;
-  font-size: 16px;
+  padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #008b8b;
+  background-color: #3a3ad9;
 }
