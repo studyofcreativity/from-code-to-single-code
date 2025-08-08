@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>from-code-to-single-code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>from-code-to-single-code</h1>
+
+  <label for="language">Lenguaje:</label>
+  <select id="language">
+    <option value="python">Python</option>
+    <option value="javascript">JavaScript</option>
+    <option value="java">Java</option>
+    <option value="csharp">C#</option>
+  </select>
+
+  <textarea id="inputCode" placeholder="Escribe tu código aquí..."></textarea>
+  <button onclick="convert()">Convertir a Código Especial</button>
+
+  <h3>Resultado:</h3>
+  <textarea id="outputCode" readonly></textarea>
+
+  <script src="encoder.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
