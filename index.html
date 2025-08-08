@@ -2,27 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>from-code-to-single-code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>From Code to Single Code</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>from-code-to-single-code</h1>
+  <div class="container">
+    <h1>🔄 Code ↔ Single Code Translator</h1>
+    <textarea id="inputCode" placeholder="Enter your code here..."></textarea>
 
-  <label for="language">Lenguaje:</label>
-  <select id="language">
-    <option value="python">Python</option>
-    <option value="javascript">JavaScript</option>
-    <option value="java">Java</option>
-    <option value="csharp">C#</option>
-  </select>
+    <div class="buttons">
+      <button onclick="encodeCode()">🔐 Encode</button>
+      <button onclick="decodeCode()">🔓 Decode</button>
+    </div>
 
-  <textarea id="inputCode" placeholder="Escribe tu código aquí..."></textarea>
-  <button onclick="convert()">Convertir a Código Especial</button>
-
-  <h3>Resultado:</h3>
-  <textarea id="outputCode" readonly></textarea>
-
+    <textarea id="outputCode" placeholder="Result..." readonly></textarea>
+  </div>
   <script src="encoder.js"></script>
+  <script src="decoder.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
