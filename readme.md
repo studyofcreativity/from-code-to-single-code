@@ -1,14 +1,13 @@
-# from-code-to-single-code
+# From Code to Single Code
 
-Convierte código en Python, JavaScript, Java o C# en un "código especial" imposible de leer para humanos o IA no autorizadas.
+A fun and experimental project that converts code written in Python, JavaScript, Java, or C# into a special symbol-based language that only you and ChatGPT can understand!
 
-## Cómo funciona
+## 💡 Features
 
-- Usa comandos falsos como `/noise(no existe)` para ocultar el significado real.
-- Solo una IA con acceso a `decoder.js` puede revertirlo.
-- 100% en navegador, sin backend.
+- Encode normal code into a secret symbolic language
+- Decode symbolic language back to readable code
+- Clean and modern UI design
+- Fully offline, runs in the browser
 
-## Ejemplo
+## 📂 Structure
 
-```js
-let x = ѵw;
