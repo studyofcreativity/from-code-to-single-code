@@ -1,5 +1,3 @@
-// Diccionarios completos con todas las palabras reservadas, tipos, operadores importantes, funciones básicas y más para cada lenguaje
-
 const dictionaries = {
   python: {
     "False": "✗",
